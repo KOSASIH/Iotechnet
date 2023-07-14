@@ -26,7 +26,7 @@ export class LazyTranslationModule {
   constructor(
     private translateService: TranslateService,
     private translateLoader: TranslateLoader,
-    stateStorageService: StateStorageService
+    stateStorageService: StateStorageService,
   ) {
     const currentLang = translateService.store.currentLang;
     this.translateLoader.getTranslation(currentLang).subscribe(translation => {
@@ -51,7 +51,10 @@ export class LazyTranslationModule {
   ],
 })
 export class TranslationModule {
-  constructor(private translateService: TranslateService, private stateStorageService: StateStorageService) {
+  constructor(
+    private translateService: TranslateService,
+    private stateStorageService: StateStorageService,
+  ) {
     this.translateService.setDefaultLang('en');
     // if user have changed language and navigates away from the application and back to the application then use previously choosed language
     const langKey = this.stateStorageService.getLocale() ?? 'en';

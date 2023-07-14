@@ -16,7 +16,7 @@ export class AuthServerProvider {
   constructor(
     private http: HttpClient,
     private stateStorageService: StateStorageService,
-    private applicationConfigService: ApplicationConfigService
+    private applicationConfigService: ApplicationConfigService,
   ) {}
 
   getToken(): string {
