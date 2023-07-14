@@ -20,7 +20,11 @@ export class AlertErrorComponent implements OnDestroy {
   errorListener: Subscription;
   httpErrorListener: Subscription;
 
-  constructor(private alertService: AlertService, private eventManager: EventManager, translateService: TranslateService) {
+  constructor(
+    private alertService: AlertService,
+    private eventManager: EventManager,
+    translateService: TranslateService,
+  ) {
     this.errorListener = eventManager.subscribe('iotechnetApp.error', (response: EventWithContent<unknown> | string) => {
       const errorResponse = (response as EventWithContent<AlertError>).content;
       this.addErrorAlert(errorResponse.message, errorResponse.key, errorResponse.params);
@@ -63,7 +67,7 @@ export class AlertErrorComponent implements OnDestroy {
             this.addErrorAlert(
               httpErrorResponse.error.detail ?? httpErrorResponse.error.message,
               httpErrorResponse.error.message,
-              httpErrorResponse.error.params
+              httpErrorResponse.error.params,
             );
           } else {
             this.addErrorAlert(httpErrorResponse.error, httpErrorResponse.error);
@@ -80,7 +84,7 @@ export class AlertErrorComponent implements OnDestroy {
             this.addErrorAlert(
               httpErrorResponse.error.detail ?? httpErrorResponse.error.message,
               httpErrorResponse.error.message,
-              httpErrorResponse.error.params
+              httpErrorResponse.error.params,
             );
           } else {
             this.addErrorAlert(httpErrorResponse.error, httpErrorResponse.error);

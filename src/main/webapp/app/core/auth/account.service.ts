@@ -20,7 +20,7 @@ export class AccountService {
     private http: HttpClient,
     private stateStorageService: StateStorageService,
     private router: Router,
-    private applicationConfigService: ApplicationConfigService
+    private applicationConfigService: ApplicationConfigService,
   ) {}
 
   authenticate(identity: Account | null): void {
@@ -56,7 +56,7 @@ export class AccountService {
 
           this.navigateToStoredUrl();
         }),
-        shareReplay()
+        shareReplay(),
       );
     }
     return this.accountCache$.pipe(catchError(() => of(null)));

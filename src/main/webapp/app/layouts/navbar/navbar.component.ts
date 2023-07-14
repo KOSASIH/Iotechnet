@@ -37,7 +37,7 @@ export default class NavbarComponent implements OnInit {
     private stateStorageService: StateStorageService,
     private accountService: AccountService,
     private profileService: ProfileService,
-    private router: Router
+    private router: Router,
   ) {
     if (VERSION) {
       this.version = VERSION.toLowerCase().startsWith('v') ? VERSION : `v${VERSION}`;

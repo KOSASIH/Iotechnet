@@ -36,7 +36,7 @@ import { UserRouteAccessService } from 'app/core/auth/user-route-access.service'
         },
         ...errorRoute,
       ],
-      { enableTracing: DEBUG_INFO_ENABLED, bindToComponentInputs: true }
+      { enableTracing: DEBUG_INFO_ENABLED, bindToComponentInputs: true },
     ),
   ],
   exports: [RouterModule],
