@@ -83,7 +83,7 @@ We welcome contributions from the community to help improve Iotechnet. If you en
 
 ## License
 
-Iotechnet is released under the [MIT License](https://opensource.org/licenses/MIT). You are free to use, modify, and distribute the platform in accordance with the terms of the license. Please review the license file for more details.
+Iotechnet is released under the [MIT License](https://github.com/KOSASIH/Iotechnet/blob/main/LICENSE). You are free to use, modify, and distribute the platform in accordance with the terms of the license. Please review the license file for more details.
 
 ---
 
