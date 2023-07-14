@@ -1,7 +1,5 @@
 # Iotechnet - IoT Microservice Platform
 
-![Iotechnet Logo](https://example.com/iotechnet-logo.png)
-
 Welcome to the readme file for Iotechnet, an IoT microservice platform. This document provides an overview of the platform, installation instructions, usage guidelines, and other important information to help you get started.
 
 ## Table of Contents
