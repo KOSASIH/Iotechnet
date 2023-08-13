@@ -1,6 +1,6 @@
 [![DeepSource](https://app.deepsource.com/gh/KOSASIH/Iotechnet.svg/?label=active+issues&show_trend=true&token=OJFPQ_ma2_aJqDfmwO35KkOq)](https://app.deepsource.com/gh/KOSASIH/Iotechnet/?ref=repository-badge)
 
-\# Iotechnet - IoT Microservice Platform
+# Iotechnet - IoT Microservice Platform
 
 Welcome to the readme file for Iotechnet, an IoT microservice platform. This document provides an overview of the platform, installation instructions, usage guidelines, and other important information to help you get started.
 
